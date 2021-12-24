@@ -12,13 +12,13 @@
     </style>
   </head>
   <body>
-    <h1>Simple maps example</h1>
+    <h1>KadaiB -maps-</h1>
 
     <div id="map_canvas"></div>
     <script>
     function initMap() {
       var myOptions = {
-        zoom: 16,
+        zoom: 10,
         center: {lat: 35.36132496827418, lng: 138.7288654369183},
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true,
@@ -34,14 +34,14 @@
       var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
       var marker = new google.maps.Marker({
-        position: {lat: 53.480759, lng: -2.242631},
+        position: {lat: 35.36132496827418, lng: 138.7288654369183},
         icon: iconBase + 'flag_maps.png',
         map: map
       });
 
       // Step 3. Add info window
 
-      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">Custom info window</h2><p>This is a cool custom info window.</p></div>';
+      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">富士山</h2><p>ここは、日本一高い山の富士山です。</p><p>興味を持った理由は、富士山の真上からの地図を見てみたいと考えたからです。</p></div>';
 
       var infowindow = new google.maps.InfoWindow({
         content: contentString
